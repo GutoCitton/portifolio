@@ -70,7 +70,7 @@ function SimpleDialog(props: SimpleDialogProps) {
             (51) 99696-8550
           </Typography>
         </ListItem>
-        <StyledLink href="https://www.linkedin.com/in/augusto-ludwig/">
+        <StyledLink href="https://www.linkedin.com/in/augusto-ludwig/" target="blank">
           <ListItem>
             <LinkedInIcon />
             <Typography margin={'0 0 0 8px'} fontSize={'17px'}> 
@@ -78,7 +78,7 @@ function SimpleDialog(props: SimpleDialogProps) {
             </Typography>
           </ListItem>
         </StyledLink>
-        <StyledLink href="https://github.com/GutoCitton" >
+        <StyledLink href="https://github.com/GutoCitton" target="blank" >
           <ListItem>
             <GitHubIcon />
             <Typography margin={'0 0 0 8px'} fontSize={'17px'} > 
