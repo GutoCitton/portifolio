@@ -5,6 +5,7 @@ import StyledButton from "../../../components/StyledButton/StyledButton";
 import theme from "../../../theme";
 import { AnimatedBackground } from "../../../components/AnimatedBackground/AnimatedBackground";
 import SimpleDialogDemo from "../../../components/Contact/Contact";
+import CVGuto from '../../../assets/documents/CV - AUGUSTO CITTON LUDWIG.pdf'
 
 
 const Hero = () => {
@@ -34,7 +35,7 @@ const Hero = () => {
   const DowloadCV = () => {
     const link = document.createElement("a");
     link.download = 'CV - AUGUSTO CITTON LUDWIG.pdf';
-    link.href = '../../../assets/documents/CV - AUGUSTO CITTON LUDWIG.pdf';
+    link.href = CVGuto;
     link.click();
   }
 

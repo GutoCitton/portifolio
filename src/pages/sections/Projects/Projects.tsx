@@ -47,7 +47,7 @@ const Projects = () => {
             {" "}
             Projetos
           </Typography>
-          <Grid container xs={12} md={12} justifyContent={"center"}>
+          <Grid item container xs={12} md={12} justifyContent={"center"}>
             <StyledGrid>Project 1</StyledGrid>
             <StyledGrid>Project 1</StyledGrid>
             <StyledGrid>Project 1</StyledGrid>
