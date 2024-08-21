@@ -38,15 +38,32 @@ const Skills = () => {
     },
   ]);
 
-  const StyledTypography = styled(Typography)({
+  const StyledBox = styled(Box)(() => ({
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-5%, -50%)", 
+    width: "350%",
+    height: "175%",
+  }));
+
+  const StyledTypographyIcon = styled(Typography)({
     fontSize: "25px",
     color: "white",
     margin: "0  0 30px 18px",
   });
 
+  const StyledTypography = styled(Typography)({
+    fontSize: "40px",
+    marginBottom: "30px",
+    marginTop: "80px",
+    color: "white",
+    fontWeight: "bold",
+  });
+
   const StyledImage = styled("img")(() => [
     {
-      width: "65px",
+      width: "30px",
       margin: "0 0 30px 0",
     },
   ]);
@@ -61,15 +78,7 @@ const Skills = () => {
         >
           <Grid container>
             <Grid item xs={12} md={12} textAlign={"center"}>
-              <Typography
-                variant="h3"
-                marginBottom={"120px"}
-                marginTop={"150px"}
-                color={"white"}
-                fontWeight={"bold"}
-              >
-                Skills
-              </Typography>
+              <StyledTypography>Skills</StyledTypography>
               <Grid
                 item
                 xs={6}
@@ -78,50 +87,50 @@ const Skills = () => {
                 justifyContent={"space-around"}
               >
                 <List>
-                  <Box position="absolute" width="100vh" top={-335} left={-75}>
+                  <StyledBox>
                     <AnimatedBackground />
-                  </Box>
+                  </StyledBox>
                   <ListItem>
                     <StyledImage src={JSImg} />
-                    <StyledTypography>Javascript</StyledTypography>
+                    <StyledTypographyIcon>Javascript</StyledTypographyIcon>
                   </ListItem>
                   <ListItem>
                     <StyledImage src={ReactImg} />
-                    <StyledTypography>React</StyledTypography>
+                    <StyledTypographyIcon>React</StyledTypographyIcon>
                   </ListItem>
                   <ListItem>
                     <StyledImage src={HTMLIgm} />
-                    <StyledTypography>HTML</StyledTypography>
+                    <StyledTypographyIcon>HTML</StyledTypographyIcon>
                   </ListItem>
                   <ListItem>
                     <StyledImage src={CssImg} />
-                    <StyledTypography>CSS</StyledTypography>
+                    <StyledTypographyIcon>CSS</StyledTypographyIcon>
                   </ListItem>
                   <ListItem>
                     <StyledImage src={TSimg} />
-                    <StyledTypography>Typescript</StyledTypography>
+                    <StyledTypographyIcon>Typescript</StyledTypographyIcon>
                   </ListItem>
                 </List>
                 <List>
                   <ListItem>
                     <StyledImage src={NodeImg} />
-                    <StyledTypography>Node JS</StyledTypography>
+                    <StyledTypographyIcon>Node JS</StyledTypographyIcon>
                   </ListItem>
                   <ListItem>
                     <StyledImage src={MongoImg} />
-                    <StyledTypography>MongoDB</StyledTypography>
+                    <StyledTypographyIcon>MongoDB</StyledTypographyIcon>
                   </ListItem>
                   <ListItem>
                     <StyledImage src={FirebaseImg} />
-                    <StyledTypography>Firebase</StyledTypography>
+                    <StyledTypographyIcon>Firebase</StyledTypographyIcon>
                   </ListItem>
                   <ListItem>
                     <StyledImage src={GitImg} />
-                    <StyledTypography>Git</StyledTypography>
+                    <StyledTypographyIcon>Git</StyledTypographyIcon>
                   </ListItem>
                   <ListItem>
                     <StyledImage src={APIimg} />
-                    <StyledTypography>API Rest</StyledTypography>
+                    <StyledTypographyIcon>API Rest</StyledTypographyIcon>
                   </ListItem>
                 </List>
               </Grid>

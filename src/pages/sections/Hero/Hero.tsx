@@ -47,7 +47,7 @@ const Hero = () => {
           <Grid container spacing={2} >
             <Grid item xs={12} md={5} >
               <Box position='relative'>
-                <Box position='absolute' width= '150%' top={-100} right={-30}>
+                <Box position='absolute' width= '140%' top={-100} right={-30}>
                   <AnimatedBackground />
                 </Box>
                 <Box position='relative' textAlign='center'>
@@ -56,10 +56,10 @@ const Hero = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={7}>
-              <Typography color="primary.contrastText" fontWeight={'bold'} variant="h1" textAlign="center" pb={2}>
+              <Typography color="primary.contrastText" fontWeight={'bold'} variant="h2" textAlign="center" pb={2}>
                 Augusto Citton
               </Typography>
-              <Typography color="primary.contrastText" variant="h3" textAlign="center">
+              <Typography color="primary.contrastText" variant="h5" textAlign="center">
                 Desenvolvedor em ascenção
               </Typography>
               <Grid container display="flex" justifyContent="center" spacing={3} pt={8}>

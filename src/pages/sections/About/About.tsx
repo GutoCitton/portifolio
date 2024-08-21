@@ -32,7 +32,7 @@ const About = () => {
             <Grid item xs={12} md={8} textAlign={"center"}>
               <Box position="relative">
                 <Typography
-                  variant="h3"
+                  fontSize={"40px"}
                   marginBottom={"15px"}
                   color={"white"}
                   fontWeight={"bold"}
@@ -42,7 +42,7 @@ const About = () => {
                 <Typography
                   color={"white"}
                   textAlign={"justify"}
-                  fontSize={"30px"}
+                  fontSize={"28px"}
                 >
                   Sou um entusiasta de tecnologia e estou começando minha
                   jornada na tecnologia como desenvolvedor de software.
@@ -61,7 +61,7 @@ const About = () => {
               position={"relative"}
               alignItems={"center"}
             >
-              <Box position="absolute" width="80vh" top={-280} left={-40}>
+              <Box position="absolute" width="100%" top={-100} left={0}>
                 <AnimatedBackground />
               </Box>
             </Grid>

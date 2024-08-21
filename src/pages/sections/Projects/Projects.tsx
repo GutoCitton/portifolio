@@ -28,6 +28,17 @@ const Projects = () => {
     margin: "50px",
   }));
 
+  const StyledAndamento = styled(Typography)(() => ({
+    fontSize: "40px",
+    color:"white",
+    fontWeight:"bold",
+    position:"absolute",
+    marginLeft:'110px',
+    backgroundColor:'rgb(0, 0, 0, 0.9)',
+    padding:'280px',
+    marginTop: '-170px'
+  }));
+
   return (
     <>
       <SyledProjects id="projects">
@@ -37,16 +48,20 @@ const Projects = () => {
           sx={{ scrollSnapAlign: "center" }}
         >
           <Typography
-            variant="h3"
-            marginBottom={"50px"}
-            marginTop={"100px"}
+            fontSize={'40px'}
+            marginBottom={"35px"}
+            marginTop={"90px"}
             color={"white"}
             fontWeight={"bold"}
             textAlign={"center"}
           >
-            {" "}
             Projetos
           </Typography>
+          <StyledAndamento
+           
+          >
+            EM ANDAMENTO...
+          </StyledAndamento>
           <Grid item container xs={12} md={12} justifyContent={"center"}>
             <StyledGrid>Project 1</StyledGrid>
             <StyledGrid>Project 1</StyledGrid>
