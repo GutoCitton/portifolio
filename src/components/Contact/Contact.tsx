@@ -9,6 +9,8 @@ import { Box, List, ListItem, styled } from "@mui/material";
 import { WhatsApp } from "@mui/icons-material";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import { AnimatedBackground } from "../AnimatedBackground/AnimatedBackground";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import theme from "../../theme";
 
 export interface SimpleDialogProps {
   open: boolean;
@@ -38,9 +40,20 @@ function SimpleDialog(props: SimpleDialogProps) {
     fontWeight: 'bold',
   }));
 
+  const StyledLink = styled('a')({
+    color: 'inherit',
+    textDecoration: 'none',
+    '&:visited': {
+      color: 'inherit'
+    },
+    '&:hover': {
+      color: theme.palette.secondary.light
+    },
+  });
+
   return (
     <CustomDialog onClose={handleClose} open={open}>
-      <Box position='absolute' width= '100%' top={-50} >
+      <Box position='absolute' width= '100%' top={-1} >
         <AnimatedBackground />
       </Box>
       <CustomDialogTitle variant="h4">Contatos</CustomDialogTitle>
@@ -57,14 +70,23 @@ function SimpleDialog(props: SimpleDialogProps) {
             (51) 99696-8550
           </Typography>
         </ListItem>
-        <a href="https://www.linkedin.com/in/augusto-ludwig/">
+        <StyledLink href="https://www.linkedin.com/in/augusto-ludwig/">
           <ListItem>
             <LinkedInIcon />
             <Typography margin={'0 0 0 8px'} fontSize={'17px'}> 
               Augusto Ludwig
             </Typography>
           </ListItem>
-        </a>
+        </StyledLink>
+        <StyledLink href="https://github.com/GutoCitton" >
+          <ListItem>
+            <GitHubIcon />
+            <Typography margin={'0 0 0 8px'} fontSize={'17px'} > 
+              GitHub
+            </Typography>
+          </ListItem>
+          
+        </StyledLink>
       </List>
     </CustomDialog>
   );

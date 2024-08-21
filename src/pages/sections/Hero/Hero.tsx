@@ -56,7 +56,7 @@ const Hero = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={7}>
-              <Typography color="primary.contrastText" fontWeight={'bold'} variant="h2" textAlign="center" pb={2}>
+              <Typography color="primary.contrastText" fontWeight={'bold'} variant="h2" textAlign="center" pb={2} marginTop={'50px'}>
                 Augusto Citton
               </Typography>
               <Typography color="primary.contrastText" variant="h5" textAlign="center">
