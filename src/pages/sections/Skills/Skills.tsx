@@ -42,40 +42,60 @@ const Skills = () => {
     position: "absolute",
     top: "50%",
     left: "50%",
-    transform: "translate(-5%, -50%)", 
+    transform: "translate(-5%, -50%)",
     width: "350%",
     height: "175%",
     [theme.breakpoints.down("md")]: {
       // <= Mobile
-      display: 'none'
+      position: "absolute",
+      top: "90%",
+      left: "10%",
+      transform: "translate(-5%, -50%)",
+      width: "200%",
+      height: "175%",
     },
   }));
 
-  const StyledTypographyIcon = styled(Typography)({
+  const StyledTypographyIcon = styled(Typography)(({ theme }) => ({
     fontSize: "22px",
     color: "white",
     margin: "0  0 30px 18px",
-  });
-  
-  const StyledListItem = styled(ListItem)(({ theme }) => ({
     [theme.breakpoints.down("md")]: {
       // <= Mobile
-      marginLeft: "-8px"
+      fontSize: "15px",
+      color: "white",
+      margin: "0  0 20px 10px",
     },
   }));
 
-  const StyledTypography = styled(Typography)({
+  const StyledListItem = styled(ListItem)(({ theme }) => ({
+    [theme.breakpoints.down("md")]: {
+      // <= Mobile
+      marginLeft: "10px",
+    },
+  }));
+
+  const StyledTypography = styled(Typography)(({ theme }) => ({
     fontSize: "40px",
     marginBottom: "30px",
     marginTop: "80px",
     color: "white",
     fontWeight: "bold",
-  });
+    [theme.breakpoints.down("md")]: {
+      // <= Mobile
+      marginTop: "-10px"
+    },
+  }));
 
-  const StyledImage = styled("img")(() => [
+  const StyledImage = styled("img")(({ theme }) => [
     {
       width: "40px",
       margin: "0 0 30px 0",
+      [theme.breakpoints.down("md")]: {
+        // <= Mobile
+        width: "32px",
+        margin: "0 0 20px 10px",
+      },
     },
   ]);
 
@@ -96,9 +116,10 @@ const Skills = () => {
                 md={12}
                 display={"flex"}
                 justifyContent={"space-around"}
+                maxHeight={'100px'}
               >
                 <List>
-                  <StyledBox> 
+                  <StyledBox>
                     <AnimatedBackground />
                   </StyledBox>
                   <StyledListItem>
