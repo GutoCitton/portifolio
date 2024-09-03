@@ -24,7 +24,7 @@ const Skills = () => {
   const SyleSkills = styled("div")(({ theme }) => [
     {
       backgroundColor: theme.palette.primary.main,
-      height: "120vh",
+      height: "100vh",
       display: "flex",
       [theme.breakpoints.up("xs")]: {
         // <= Mobile
@@ -40,7 +40,7 @@ const Skills = () => {
 
   const StyledBox = styled(Box)(({ theme }) => ({
     position: "absolute",
-    top: "50%",
+    top: "0%",
     left: "50%",
     transform: "translate(-5%, -50%)",
     width: "350%",

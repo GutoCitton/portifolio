@@ -4,13 +4,9 @@ const Projects = () => {
   const SyledProjects = styled("div")(({ theme }) => [
     {
       backgroundColor: theme.palette.primary.main,
-      height: "120vh",
+      height: "100vh",
       display: "flex",
       alignItems: "center",
-      [theme.breakpoints.up("xs")]: {
-        // <= Mobile
-        paddingTop: "100px",
-      },
       [theme.breakpoints.up("md")]: {
         // >= Mobile
         paddingTop: "0px",
@@ -30,11 +26,19 @@ const Projects = () => {
       // <= Mobile
       backgroundColor: "black",
       color: "white",
-      width: "15vh",
-      height: "20vh",
+      width: "12vh",
+      height: "15vh",
       textAlign: "center",
       margin: "6px",
     },
+  }));
+
+  const StyledTypography = styled(Typography)(() => ({
+    fontSize: "40px",
+    marginBottom: "30px",
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center",
   }));
 
   return (
@@ -45,16 +49,7 @@ const Projects = () => {
           className="Container"
           sx={{ scrollSnapAlign: "center" }}
         >
-          <Typography
-            fontSize={"40px"}
-            marginBottom={"35px"}
-            // marginTop={"90px"}
-            color={"white"}
-            fontWeight={"bold"}
-            textAlign={"center"}
-          >
-            Projetos
-          </Typography>
+          <StyledTypography>Projetos</StyledTypography>
 
           <Grid
             item
