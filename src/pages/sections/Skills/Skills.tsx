@@ -24,7 +24,7 @@ const Skills = () => {
   const SyleSkills = styled("div")(({ theme }) => [
     {
       backgroundColor: theme.palette.primary.main,
-      height: "100vh",
+      height: "120vh",
       display: "flex",
       [theme.breakpoints.up("xs")]: {
         // <= Mobile
@@ -81,10 +81,6 @@ const Skills = () => {
     marginTop: "80px",
     color: "white",
     fontWeight: "bold",
-    [theme.breakpoints.down("md")]: {
-      // <= Mobile
-      marginTop: "-10px"
-    },
   }));
 
   const StyledImage = styled("img")(({ theme }) => [
