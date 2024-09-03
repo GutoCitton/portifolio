@@ -38,20 +38,31 @@ const Skills = () => {
     },
   ]);
 
-  const StyledBox = styled(Box)(() => ({
+  const StyledBox = styled(Box)(({ theme }) => ({
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-5%, -50%)", 
     width: "350%",
     height: "175%",
+    [theme.breakpoints.down("md")]: {
+      // <= Mobile
+      display: 'none'
+    },
   }));
 
   const StyledTypographyIcon = styled(Typography)({
-    fontSize: "25px",
+    fontSize: "22px",
     color: "white",
     margin: "0  0 30px 18px",
   });
+  
+  const StyledListItem = styled(ListItem)(({ theme }) => ({
+    [theme.breakpoints.down("md")]: {
+      // <= Mobile
+      marginLeft: "-8px"
+    },
+  }));
 
   const StyledTypography = styled(Typography)({
     fontSize: "40px",
@@ -63,7 +74,7 @@ const Skills = () => {
 
   const StyledImage = styled("img")(() => [
     {
-      width: "30px",
+      width: "40px",
       margin: "0 0 30px 0",
     },
   ]);
@@ -87,51 +98,51 @@ const Skills = () => {
                 justifyContent={"space-around"}
               >
                 <List>
-                  <StyledBox>
+                  <StyledBox> 
                     <AnimatedBackground />
                   </StyledBox>
-                  <ListItem>
+                  <StyledListItem>
                     <StyledImage src={JSImg} />
                     <StyledTypographyIcon>Javascript</StyledTypographyIcon>
-                  </ListItem>
-                  <ListItem>
+                  </StyledListItem>
+                  <StyledListItem>
                     <StyledImage src={ReactImg} />
                     <StyledTypographyIcon>React</StyledTypographyIcon>
-                  </ListItem>
-                  <ListItem>
+                  </StyledListItem>
+                  <StyledListItem>
                     <StyledImage src={HTMLIgm} />
                     <StyledTypographyIcon>HTML</StyledTypographyIcon>
-                  </ListItem>
-                  <ListItem>
+                  </StyledListItem>
+                  <StyledListItem>
                     <StyledImage src={CssImg} />
                     <StyledTypographyIcon>CSS</StyledTypographyIcon>
-                  </ListItem>
-                  <ListItem>
+                  </StyledListItem>
+                  <StyledListItem>
                     <StyledImage src={TSimg} />
                     <StyledTypographyIcon>Typescript</StyledTypographyIcon>
-                  </ListItem>
+                  </StyledListItem>
                 </List>
                 <List>
-                  <ListItem>
+                  <StyledListItem>
                     <StyledImage src={NodeImg} />
                     <StyledTypographyIcon>Node JS</StyledTypographyIcon>
-                  </ListItem>
-                  <ListItem>
+                  </StyledListItem>
+                  <StyledListItem>
                     <StyledImage src={MongoImg} />
                     <StyledTypographyIcon>MongoDB</StyledTypographyIcon>
-                  </ListItem>
-                  <ListItem>
+                  </StyledListItem>
+                  <StyledListItem>
                     <StyledImage src={FirebaseImg} />
                     <StyledTypographyIcon>Firebase</StyledTypographyIcon>
-                  </ListItem>
-                  <ListItem>
+                  </StyledListItem>
+                  <StyledListItem>
                     <StyledImage src={GitImg} />
                     <StyledTypographyIcon>Git</StyledTypographyIcon>
-                  </ListItem>
-                  <ListItem>
+                  </StyledListItem>
+                  <StyledListItem>
                     <StyledImage src={APIimg} />
                     <StyledTypographyIcon>API Rest</StyledTypographyIcon>
-                  </ListItem>
+                  </StyledListItem>
                 </List>
               </Grid>
             </Grid>

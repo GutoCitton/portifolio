@@ -25,7 +25,7 @@ const BackToTopBtn: React.FC<BackToTopBtnProps> = ({ showBelow }) => {
         border: `solid 3px ${theme.palette.primary.dark}`
       },
       transition: "0.3s",
-      right: "5%"
+      right: "5%",
     },
   ]);
 

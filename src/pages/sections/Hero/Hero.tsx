@@ -24,6 +24,17 @@ const Hero = () => {
     },
   ]);
 
+  const StyledBox = styled(Box)(({ theme }) => ({
+    position: "absolute",
+    top: '-100px',
+    right: "-30px",
+    width: "140%",
+    [theme.breakpoints.down("md")]: {
+      // <= Mobile
+      display: 'none'
+    },
+  }));
+
   const StyledImage = styled("img")(() => [
     {
       width: "75%",
@@ -47,9 +58,9 @@ const Hero = () => {
           <Grid container spacing={2} >
             <Grid item xs={12} md={5} >
               <Box position='relative'>
-                <Box position='absolute' width= '140%' top={-100} right={-30}>
+                <StyledBox>
                   <AnimatedBackground />
-                </Box>
+                </StyledBox>
                 <Box position='relative' textAlign='center'>
                   <StyledImage src={Avatar} />
                 </Box>

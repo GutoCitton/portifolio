@@ -28,16 +28,16 @@ const Projects = () => {
     margin: "50px",
   }));
 
-  const StyledAndamento = styled(Typography)(() => ({
-    fontSize: "40px",
-    color:"white",
-    fontWeight:"bold",
-    position:"absolute",
-    marginLeft:'110px',
-    backgroundColor:'rgb(0, 0, 0, 0.9)',
-    padding:'280px',
-    marginTop: '-170px'
-  }));
+  // const StyledAndamento = styled(Typography)(() => ({
+  //   fontSize: "40px",
+  //   color:"white",
+  //   fontWeight:"bold",
+  //   position:"absolute",
+  //   marginLeft:'110px',
+  //   backgroundColor:'rgb(0, 0, 0, 0.9)',
+  //   padding:'280px',
+  //   marginTop: '-170px'
+  // }));
 
   return (
     <>
@@ -57,11 +57,11 @@ const Projects = () => {
           >
             Projetos
           </Typography>
-          <StyledAndamento
+          {/* <StyledAndamento
            
           >
             EM ANDAMENTO...
-          </StyledAndamento>
+          </StyledAndamento> */}
           <Grid item container xs={12} md={12} justifyContent={"center"}>
             <StyledGrid>Project 1</StyledGrid>
             <StyledGrid>Project 1</StyledGrid>

@@ -20,6 +20,18 @@ const About = () => {
     },
   ]);
 
+  const StyledBox = styled(Box)(({ theme }) => ({
+    position: "absolute",
+    top: "-100",
+    left: "0", 
+    width: "100%",
+    height: "175%",
+    [theme.breakpoints.down("md")]: {
+      // <= Mobile
+      display: 'none'
+    },
+  }));
+
   return (
     <>
       <StyledAbout id="about">
@@ -56,9 +68,9 @@ const About = () => {
               position={"relative"}
               alignItems={"center"}
             >
-              <Box position="absolute" width="100%" top={-100} left={0}>
+              <StyledBox position="absolute" width="100%" top={-100} left={0}>
                 <AnimatedBackground />
-              </Box>
+              </StyledBox>
             </Grid>
           </Grid>
         </Container>
