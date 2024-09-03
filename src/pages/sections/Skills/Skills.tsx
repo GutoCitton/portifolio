@@ -75,7 +75,7 @@ const Skills = () => {
     },
   }));
 
-  const StyledTypography = styled(Typography)(({ theme }) => ({
+  const StyledTypography = styled(Typography)(() => ({
     fontSize: "40px",
     marginBottom: "30px",
     marginTop: "80px",
