@@ -44,12 +44,7 @@ const About = () => {
                   textAlign={"justify"}
                   fontSize={"28px"}
                 >
-                  Sou um entusiasta de tecnologia e estou começando minha
-                  jornada na tecnologia como desenvolvedor de software.
-                  Apaixonado por aprender novas linguagens e tecnologias, estou
-                  em busca de oportunidades para aplicar meu conhecimento e
-                  crescer profissionalmente. Vamos conectar e explorar possíveis
-                  colaborações!
+                  Sou um entusiasta de tecnologia e estou começando minha jornada como desenvolvedor de software, já atuei apoiando na correção, avaliação e testes de pequenas tarefas dos alunos de um programa de capacitação focado em front end. Apaixonado por aprender novas linguagens e tecnologias, estou em busca de oportunidades para aplicar meu conhecimento e crescer profissionalmente.
                 </Typography>
               </Box>
             </Grid>
