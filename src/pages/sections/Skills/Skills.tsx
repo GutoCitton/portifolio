@@ -18,6 +18,8 @@ import MongoImg from "../../../assets/images/Mongodb im.png";
 import NodeImg from "../../../assets/images/node img.png";
 import ReactImg from "../../../assets/images/react img.png";
 import TSimg from "../../../assets/images/TS img.png";
+import JavaImg from "../../../assets/images/java img.png";
+import AngularImg from "../../../assets/images/angular png.png";
 import { AnimatedBackground } from "../../../components/AnimatedBackground/AnimatedBackground";
 
 const Skills = () => {
@@ -78,7 +80,7 @@ const Skills = () => {
   const StyledTypography = styled(Typography)(() => ({
     fontSize: "40px",
     marginBottom: "30px",
-    marginTop: "80px",
+    marginTop: "30px",
     color: "white",
     fontWeight: "bold",
   }));
@@ -138,6 +140,10 @@ const Skills = () => {
                     <StyledImage src={TSimg} />
                     <StyledTypographyIcon>Typescript</StyledTypographyIcon>
                   </StyledListItem>
+                  <StyledListItem>
+                    <StyledImage src={AngularImg} />
+                    <StyledTypographyIcon>Angular</StyledTypographyIcon>
+                  </StyledListItem>
                 </List>
                 <List>
                   <StyledListItem>
@@ -159,6 +165,10 @@ const Skills = () => {
                   <StyledListItem>
                     <StyledImage src={APIimg} />
                     <StyledTypographyIcon>API Rest</StyledTypographyIcon>
+                  </StyledListItem>
+                  <StyledListItem>
+                    <StyledImage src={JavaImg} />
+                    <StyledTypographyIcon>Java</StyledTypographyIcon>
                   </StyledListItem>
                 </List>
               </Grid>

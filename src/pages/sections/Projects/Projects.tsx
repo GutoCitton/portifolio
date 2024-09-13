@@ -2,6 +2,8 @@ import { Box, Container, Grid, styled, Typography } from "@mui/material";
 import discordLogo from "../../../assets/images/discord logo.jpg";
 import pinterestLogo from "../../../assets/images/pinterest logo.jpg";
 import instagramLogo from "../../../assets/images/instagram logo.jpg";
+import miniBlog from "../../../assets/images/mini blog.jpeg";
+import secretWord from "../../../assets/images/secret word.png";
 
 const Projects = () => {
 
@@ -31,6 +33,7 @@ const Projects = () => {
     height: "20vh",
     textAlign: "center",
     margin: "20px 30px 100px 100px",
+    borderRadius: '12px',
     [theme.breakpoints.down("md")]: {
       // <= Mobile
       backgroundColor: "black",
@@ -100,12 +103,12 @@ const Projects = () => {
               <StyledGrid bgImage={instagramLogo}/>
             </Box>
             <Box>
-              <StyledGridTypography>Project 4</StyledGridTypography>
-              <StyledGrid bgImage={""} />
+              <StyledGridTypography>Mini Blog</StyledGridTypography>
+              <StyledGrid bgImage={miniBlog} />
             </Box>
             <Box>
-              <StyledGridTypography>Project 5</StyledGridTypography>
-              <StyledGrid bgImage={""} />
+              <StyledGridTypography>Secret Word</StyledGridTypography>
+              <StyledGrid bgImage={secretWord} />
             </Box>
             <Box>
               <StyledGridTypography>Project 6</StyledGridTypography>
