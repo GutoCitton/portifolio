@@ -61,9 +61,10 @@ const Projects = () => {
       color: "white",
       fontWeight: "bold",
       textAlign: "center",
-      marginLeft: '0px',
+      marginLeft: '25px',
       marginTop: '15px',
       fontSize:'15px',
+      maxWidth: '80px'
     }, 
   }));
 
