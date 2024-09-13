@@ -61,7 +61,7 @@ const Projects = () => {
       color: "white",
       fontWeight: "bold",
       textAlign: "center",
-      marginLeft: '25px',
+      marginLeft: '10px',
       marginTop: '15px',
       fontSize:'15px',
       maxWidth: '80px'
