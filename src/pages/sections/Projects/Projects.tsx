@@ -4,6 +4,10 @@ import pinterestLogo from "../../../assets/images/pinterest logo.jpg";
 import instagramLogo from "../../../assets/images/instagram logo.jpg";
 
 const Projects = () => {
+
+  interface StyledGridProps {
+    bgImage: string;
+  }
   const SyledProjects = styled("div")(({ theme }) => [
     {
       backgroundColor: theme.palette.primary.main,
@@ -18,7 +22,7 @@ const Projects = () => {
     },
   ]);
 
-  const StyledGrid = styled(Grid)(({ theme, bgImage }) => ({
+  const StyledGrid = styled(Grid, {shouldForwardProp: (prop) => prop !== 'bgImage'})<StyledGridProps>(({ theme, bgImage }) => ({
     backgroundImage: `url(${bgImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -96,23 +100,23 @@ const Projects = () => {
             </Box>
             <Box>
               <StyledGridTypography>Project 4</StyledGridTypography>
-              <StyledGrid />
+              <StyledGrid bgImage={""} />
             </Box>
             <Box>
               <StyledGridTypography>Project 5</StyledGridTypography>
-              <StyledGrid />
+              <StyledGrid bgImage={""} />
             </Box>
             <Box>
               <StyledGridTypography>Project 6</StyledGridTypography>
-              <StyledGrid />
+              <StyledGrid bgImage={""} />
             </Box>
             <Box>
               <StyledGridTypography>Project 7</StyledGridTypography>
-              <StyledGrid />
+              <StyledGrid bgImage={""} />
             </Box>
             <Box>
               <StyledGridTypography>Project 7</StyledGridTypography>
-              <StyledGrid />
+              <StyledGrid bgImage={""} />
             </Box>
           </Grid>
         </Container>
