@@ -1,4 +1,7 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material";
+import discordLogo from "../../../assets/images/discord logo.jpg";
+import pinterestLogo from "../../../assets/images/pinterest logo.jpg";
+import instagramLogo from "../../../assets/images/instagram logo.jpg";
 
 const Projects = () => {
   const SyledProjects = styled("div")(({ theme }) => [
@@ -15,13 +18,15 @@ const Projects = () => {
     },
   ]);
 
-  const StyledGrid = styled(Grid)(({ theme }) => ({
-    backgroundColor: "black",
+  const StyledGrid = styled(Grid)(({ theme, bgImage }) => ({
+    backgroundImage: `url(${bgImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     color: "white",
     width: "15vh",
     height: "20vh",
     textAlign: "center",
-    margin: "50px",
+    margin: "20px 30px 100px 100px",
     [theme.breakpoints.down("md")]: {
       // <= Mobile
       backgroundColor: "black",
@@ -29,8 +34,8 @@ const Projects = () => {
       width: "12vh",
       height: "15vh",
       textAlign: "center",
-      margin: "6px",
-    },
+      margin: "9px",
+    }, 
   }));
 
   const StyledTypography = styled(Typography)(() => ({
@@ -40,6 +45,24 @@ const Projects = () => {
     fontWeight: "bold",
     textAlign: "center",
   }));
+
+  const StyledGridTypography = styled(Typography)(({theme}) => ({
+    color: "white",
+    fontSize:'20px',
+    fontWeight: "bold",
+    textAlign: "center",
+    marginLeft: '70px',
+    [theme.breakpoints.down("md")]: {
+      // <= Mobile
+      color: "white",
+      fontWeight: "bold",
+      textAlign: "center",
+      marginLeft: '0px',
+      marginTop: '15px',
+      fontSize:'15px',
+    }, 
+  }));
+
 
   return (
     <>
@@ -60,35 +83,35 @@ const Projects = () => {
             textAlign={"center"}
           >
             <Box>
-              <Typography>Project 1</Typography>
+              <StyledGridTypography>Clone Discord</StyledGridTypography>
+              <StyledGrid bgImage={discordLogo} />
+            </Box>
+            <Box>
+              <StyledGridTypography>Clone Pinterest</StyledGridTypography>
+              <StyledGrid bgImage={pinterestLogo}/>
+            </Box>
+            <Box>
+              <StyledGridTypography>Clone Instagram</StyledGridTypography>
+              <StyledGrid bgImage={instagramLogo}/>
+            </Box>
+            <Box>
+              <StyledGridTypography>Project 4</StyledGridTypography>
               <StyledGrid />
             </Box>
             <Box>
-              <Typography>Project 2</Typography>
+              <StyledGridTypography>Project 5</StyledGridTypography>
               <StyledGrid />
             </Box>
             <Box>
-              <Typography>Project 3</Typography>
+              <StyledGridTypography>Project 6</StyledGridTypography>
               <StyledGrid />
             </Box>
             <Box>
-              <Typography>Project 4</Typography>
+              <StyledGridTypography>Project 7</StyledGridTypography>
               <StyledGrid />
             </Box>
             <Box>
-              <Typography>Project 5</Typography>
-              <StyledGrid />
-            </Box>
-            <Box>
-              <Typography>Project 6</Typography>
-              <StyledGrid />
-            </Box>
-            <Box>
-              <Typography>Project 7</Typography>
-              <StyledGrid />
-            </Box>
-            <Box>
-              <Typography>Project 7</Typography>
+              <StyledGridTypography>Project 7</StyledGridTypography>
               <StyledGrid />
             </Box>
           </Grid>
