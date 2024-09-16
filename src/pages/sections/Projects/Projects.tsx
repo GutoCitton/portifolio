@@ -33,7 +33,7 @@ const Projects = () => {
     width: "15vh",
     height: "20vh",
     textAlign: "center",
-    margin: "20px 30px 100px 100px",
+    margin: "20px 30px 100px 30px",
     borderRadius: "12px",
     [theme.breakpoints.down("md")]: {
       // <= Mobile
@@ -59,21 +59,27 @@ const Projects = () => {
     color: "white",
     fontSize: "20px",
     fontWeight: "bold",
-    textAlign: "center",
-    marginLeft: "70px",
-    [theme.breakpoints.down("sm")]: {
+    // marginLeft: "70px",
+    [theme.breakpoints.down("md")]: {
       // <= Mobile
       color: "white",
       fontWeight: "bold",
-      marginLeft: "10px",
+      // marginLeft: "6px",
       marginTop: "12px",
       fontSize: "15px",
       maxWidth: "80px",
-      maxHeight:'40px',
+      height:'40px',
       display: 'flex',
       alignItems: 'end',
       justifyContent: 'space-around'
     },
+  }));
+
+  const StyledBox = styled(Box)(({ theme }) => ({
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center'
   }));
 
   return (
@@ -95,38 +101,38 @@ const Projects = () => {
             textAlign={"center"}
             alignItems={"center"}
           >
-            <Box>
+            <StyledBox>
               <StyledGridTypography>Clone Discord</StyledGridTypography>
               <StyledGrid bgImage={discordLogo} />
-            </Box>
-            <Box>
+            </StyledBox>
+            <StyledBox>
               <StyledGridTypography>Clone Pinterest</StyledGridTypography>
               <StyledGrid bgImage={pinterestLogo} />
-            </Box>
-            <Box>
+            </StyledBox>
+            <StyledBox>
               <StyledGridTypography>Clone Instagram</StyledGridTypography>
               <StyledGrid bgImage={instagramLogo} />
-            </Box>
-            <Box>
+            </StyledBox>
+            <StyledBox>
               <StyledGridTypography>Mini Blog</StyledGridTypography>
               <StyledGrid bgImage={miniBlog} />
-            </Box>
-            <Box>
+            </StyledBox>
+            <StyledBox>
               <StyledGridTypography>Secret Word</StyledGridTypography>
               <StyledGrid bgImage={secretWord} />
-            </Box>
-            <Box>
+            </StyledBox>
+            <StyledBox>
               <StyledGridTypography>Project 6</StyledGridTypography>
               <StyledGrid bgImage={""} />
-            </Box>
-            <Box>
+            </StyledBox>
+            <StyledBox>
               <StyledGridTypography>Project 7</StyledGridTypography>
               <StyledGrid bgImage={""} />
-            </Box>
-            <Box>
+            </StyledBox>
+            <StyledBox>
               <StyledGridTypography>Project 7</StyledGridTypography>
               <StyledGrid bgImage={""} />
-            </Box>
+            </StyledBox>
           </Grid>
         </Container>
       </SyledProjects>
