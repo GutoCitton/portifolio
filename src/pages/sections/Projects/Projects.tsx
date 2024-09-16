@@ -43,7 +43,7 @@ const Projects = () => {
       height: "15vh",
       textAlign: "center",
       margin: "9px",
-      marginTop: '10px',
+      marginTop: '10px'
     },
   }));
 
@@ -59,12 +59,10 @@ const Projects = () => {
     color: "white",
     fontSize: "20px",
     fontWeight: "bold",
-    // marginLeft: "70px",
     [theme.breakpoints.down("md")]: {
       // <= Mobile
       color: "white",
       fontWeight: "bold",
-      // marginLeft: "6px",
       marginTop: "12px",
       fontSize: "15px",
       maxWidth: "80px",
@@ -100,6 +98,7 @@ const Projects = () => {
             justifyContent={"center"}
             textAlign={"center"}
             alignItems={"center"}
+            columnGap={2}
           >
             <StyledBox>
               <StyledGridTypography>Clone Discord</StyledGridTypography>
