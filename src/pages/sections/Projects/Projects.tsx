@@ -65,7 +65,7 @@ const Projects = () => {
       fontWeight: "bold",
       marginTop: "12px",
       fontSize: "15px",
-      maxWidth: "80px",
+      maxWidth: "90px",
       height:'40px',
       display: 'flex',
       alignItems: 'end',
