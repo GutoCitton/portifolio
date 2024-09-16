@@ -65,7 +65,7 @@ const Projects = () => {
       // <= Mobile
       color: "white",
       fontWeight: "bold",
-      marginLeft: "13px",
+      marginLeft: "10px",
       marginTop: "12px",
       fontSize: "15px",
       maxWidth: "80px",
