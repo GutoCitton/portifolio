@@ -61,7 +61,7 @@ const Projects = () => {
     fontWeight: "bold",
     textAlign: "center",
     marginLeft: "70px",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("sm")]: {
       // <= Mobile
       color: "white",
       fontWeight: "bold",
