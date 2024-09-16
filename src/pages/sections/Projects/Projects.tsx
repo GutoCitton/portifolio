@@ -47,7 +47,6 @@ const Projects = () => {
 
   const StyledTypography = styled(Typography)(() => ({
     fontSize: "40px",
-    marginBottom: "30px",
     color: "white",
     fontWeight: "bold",
     textAlign: "center",
@@ -65,7 +64,7 @@ const Projects = () => {
       fontWeight: "bold",
       textAlign: "center",
       marginLeft: '10px',
-      marginTop: '15px',
+      marginTop: '30px',
       fontSize:'15px',
       maxWidth: '80px'
     }, 
