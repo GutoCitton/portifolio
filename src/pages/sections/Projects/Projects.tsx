@@ -75,7 +75,7 @@ const Projects = () => {
     },
   }));
 
-  const StyledBox = styled(Box)(({ theme }) => ({
+  const StyledBox = styled(Box)(() => ({
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
