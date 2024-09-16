@@ -69,7 +69,7 @@ const Projects = () => {
       marginTop: "12px",
       fontSize: "15px",
       maxWidth: "80px",
-      // height:'40px',
+      height:'40px',
       display: 'flex',
       alignItems: 'end',
       justifyContent: 'space-around'
