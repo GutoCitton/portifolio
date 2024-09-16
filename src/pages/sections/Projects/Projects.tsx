@@ -98,7 +98,6 @@ const Projects = () => {
             justifyContent={"center"}
             textAlign={"center"}
             alignItems={"center"}
-            columnGap={2}
           >
             <StyledBox>
               <StyledGridTypography>Clone Discord</StyledGridTypography>
