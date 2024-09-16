@@ -6,7 +6,6 @@ import miniBlog from "../../../assets/images/mini blog.jpeg";
 import secretWord from "../../../assets/images/secret word.png";
 
 const Projects = () => {
-
   interface StyledGridProps {
     bgImage: string;
   }
@@ -24,7 +23,9 @@ const Projects = () => {
     },
   ]);
 
-  const StyledGrid = styled(Grid, {shouldForwardProp: (prop) => prop !== 'bgImage'})<StyledGridProps>(({ theme, bgImage }) => ({
+  const StyledGrid = styled(Grid, {
+    shouldForwardProp: (prop) => prop !== "bgImage",
+  })<StyledGridProps>(({ theme, bgImage }) => ({
     backgroundImage: `url(${bgImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -33,7 +34,7 @@ const Projects = () => {
     height: "20vh",
     textAlign: "center",
     margin: "20px 30px 100px 100px",
-    borderRadius: '12px',
+    borderRadius: "12px",
     [theme.breakpoints.down("md")]: {
       // <= Mobile
       backgroundColor: "black",
@@ -42,7 +43,7 @@ const Projects = () => {
       height: "15vh",
       textAlign: "center",
       margin: "9px",
-    }, 
+    },
   }));
 
   const StyledTypography = styled(Typography)(() => ({
@@ -52,24 +53,24 @@ const Projects = () => {
     textAlign: "center",
   }));
 
-  const StyledGridTypography = styled(Typography)(({theme}) => ({
+  const StyledGridTypography = styled(Typography)(({ theme }) => ({
     color: "white",
-    fontSize:'20px',
+    fontSize: "20px",
     fontWeight: "bold",
     textAlign: "center",
-    marginLeft: '70px',
+    marginLeft: "70px",
+
     [theme.breakpoints.down("md")]: {
       // <= Mobile
       color: "white",
       fontWeight: "bold",
       textAlign: "center",
-      marginLeft: '10px',
-      marginTop: '30px',
-      fontSize:'15px',
-      maxWidth: '80px'
-    }, 
+      marginLeft: "10px",
+      marginTop: "30px",
+      fontSize: "15px",
+      maxWidth: "80px",
+    },
   }));
-
 
   return (
     <>
@@ -88,6 +89,7 @@ const Projects = () => {
             md={12}
             justifyContent={"center"}
             textAlign={"center"}
+            alignItems={"center"}
           >
             <Box>
               <StyledGridTypography>Clone Discord</StyledGridTypography>
@@ -95,11 +97,11 @@ const Projects = () => {
             </Box>
             <Box>
               <StyledGridTypography>Clone Pinterest</StyledGridTypography>
-              <StyledGrid bgImage={pinterestLogo}/>
+              <StyledGrid bgImage={pinterestLogo} />
             </Box>
             <Box>
               <StyledGridTypography>Clone Instagram</StyledGridTypography>
-              <StyledGrid bgImage={instagramLogo}/>
+              <StyledGrid bgImage={instagramLogo} />
             </Box>
             <Box>
               <StyledGridTypography>Mini Blog</StyledGridTypography>
