@@ -4,6 +4,7 @@ import pinterestLogo from "../../../assets/images/pinterest logo.jpg";
 import instagramLogo from "../../../assets/images/instagram logo.jpg";
 import miniBlog from "../../../assets/images/mini blog.jpeg";
 import secretWord from "../../../assets/images/secret word.png";
+import jornalImg from "../../../assets/images/jornal img.png";
 
 const Projects = () => {
   interface StyledGridProps {
@@ -120,8 +121,8 @@ const Projects = () => {
               <StyledGrid bgImage={secretWord} />
             </StyledBox>
             <StyledBox>
-              <StyledGridTypography>Project 6</StyledGridTypography>
-              <StyledGrid bgImage={""} />
+              <StyledGridTypography>New York Times</StyledGridTypography>
+              <StyledGrid bgImage={jornalImg} />
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>Project 7</StyledGridTypography>
