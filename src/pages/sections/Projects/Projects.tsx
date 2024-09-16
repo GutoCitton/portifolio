@@ -43,6 +43,7 @@ const Projects = () => {
       height: "15vh",
       textAlign: "center",
       margin: "9px",
+      marginTop: '10px',
     },
   }));
 
@@ -51,6 +52,7 @@ const Projects = () => {
     color: "white",
     fontWeight: "bold",
     textAlign: "center",
+    marginBottom:'30px'
   }));
 
   const StyledGridTypography = styled(Typography)(({ theme }) => ({
@@ -59,16 +61,18 @@ const Projects = () => {
     fontWeight: "bold",
     textAlign: "center",
     marginLeft: "70px",
-
     [theme.breakpoints.down("md")]: {
       // <= Mobile
       color: "white",
       fontWeight: "bold",
-      textAlign: "center",
       marginLeft: "10px",
-      marginTop: "30px",
+      marginTop: "12px",
       fontSize: "15px",
       maxWidth: "80px",
+      // height:'40px',
+      display: 'flex',
+      alignItems: 'end',
+      justifyContent: 'space-around'
     },
   }));
 
