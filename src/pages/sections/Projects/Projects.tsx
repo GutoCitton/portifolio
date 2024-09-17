@@ -5,6 +5,9 @@ import instagramLogo from "../../../assets/images/instagram logo.jpg";
 import miniBlog from "../../../assets/images/mini blog.jpeg";
 import secretWord from "../../../assets/images/secret word.png";
 import jornalImg from "../../../assets/images/jornal img.png";
+import reactGram from "../../../assets/images/reactgram img.png";
+import previsaoTempo from "../../../assets/images/previsao tempo.png";
+import cartaoVisita from "../../../assets/images/card visita.png";
 
 const Projects = () => {
   interface StyledGridProps {
@@ -101,16 +104,16 @@ const Projects = () => {
             alignItems={"center"}
           >
             <StyledBox>
-              <StyledGridTypography>Clone Discord</StyledGridTypography>
-              <StyledGrid bgImage={discordLogo} />
+              <StyledGridTypography>ReactGram</StyledGridTypography>
+              <StyledGrid bgImage={reactGram} />
             </StyledBox>
             <StyledBox>
-              <StyledGridTypography>Clone Pinterest</StyledGridTypography>
-              <StyledGrid bgImage={pinterestLogo} />
+              <StyledGridTypography>New York Times</StyledGridTypography>
+              <StyledGrid bgImage={jornalImg} />
             </StyledBox>
             <StyledBox>
-              <StyledGridTypography>Clone Instagram</StyledGridTypography>
-              <StyledGrid bgImage={instagramLogo} />
+              <StyledGridTypography>Previsão do Tempo</StyledGridTypography>
+              <StyledGrid bgImage={previsaoTempo} />
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>Mini Blog</StyledGridTypography>
@@ -121,16 +124,20 @@ const Projects = () => {
               <StyledGrid bgImage={secretWord} />
             </StyledBox>
             <StyledBox>
-              <StyledGridTypography>New York Times</StyledGridTypography>
-              <StyledGrid bgImage={jornalImg} />
+              <StyledGridTypography>Cartão de visita</StyledGridTypography>
+              <StyledGrid bgImage={cartaoVisita} />
             </StyledBox>
             <StyledBox>
-              <StyledGridTypography>Project 7</StyledGridTypography>
-              <StyledGrid bgImage={""} />
+              <StyledGridTypography>Clone Discord</StyledGridTypography>
+              <StyledGrid bgImage={discordLogo} />
             </StyledBox>
             <StyledBox>
-              <StyledGridTypography>Project 7</StyledGridTypography>
-              <StyledGrid bgImage={""} />
+              <StyledGridTypography>Clone Pinterest</StyledGridTypography>
+              <StyledGrid bgImage={pinterestLogo} />
+            </StyledBox>
+            <StyledBox>
+              <StyledGridTypography>Clone Instagram</StyledGridTypography>
+              <StyledGrid bgImage={instagramLogo} />
             </StyledBox>
           </Grid>
         </Container>
