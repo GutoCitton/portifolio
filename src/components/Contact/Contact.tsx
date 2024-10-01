@@ -67,7 +67,7 @@ function SimpleDialog(props: SimpleDialogProps) {
         <ListItem>
           <WhatsApp />
           <Typography margin={"0 0 0 8px"} fontSize={"17px"}>
-            <a href="https://api.whatsapp.com/send?phone=5551996968550" target="blank">(51) 99696-8550</a>
+            <a href="https://wa.me/555196968550" target="blank">(51) 99696-8550</a>
           </Typography>
         </ListItem>
         <StyledLink
