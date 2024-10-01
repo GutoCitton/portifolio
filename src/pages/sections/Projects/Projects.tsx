@@ -5,7 +5,7 @@ import instagramLogo from "../../../assets/images/instagram logo.jpg";
 import miniBlog from "../../../assets/images/mini blog.jpeg";
 import secretWord from "../../../assets/images/secret word.png";
 import jornalImg from "../../../assets/images/jornal img.png";
-import reactGram from "../../../assets/images/reactgram img.png";
+import portifolioImg from "../../../assets/images/portifolio img.png";
 import previsaoTempo from "../../../assets/images/previsao tempo.png";
 import cartaoVisita from "../../../assets/images/card visita.png";
 
@@ -44,6 +44,7 @@ const Projects = () => {
       height: "23vh",
     },
     transition: "0.1s",
+    border: '2px solid white',
     [theme.breakpoints.down("md")]: {
       // <= Mobile
       backgroundColor: "black",
@@ -114,7 +115,7 @@ const Projects = () => {
                 href="https://github.com/GutoCitton/Udemy-reactgram"
                 target="blank"
               >
-                <StyledGrid bgImage={reactGram} />
+                <StyledGrid bgImage={instagramLogo} />
               </a>
             </StyledBox>
             <StyledBox>
@@ -128,31 +129,67 @@ const Projects = () => {
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>Previsão do Tempo</StyledGridTypography>
-              <StyledGrid bgImage={previsaoTempo} />
+              <a
+                href="https://github.com/GutoCitton/desafio_clima"
+                target="blank"
+              >
+                <StyledGrid bgImage={previsaoTempo} />
+              </a>
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>Mini Blog</StyledGridTypography>
-              <StyledGrid bgImage={miniBlog} />
+              <a
+                href="https://github.com/GutoCitton/Udemy-miniblog"
+                target="blank"
+              >
+                <StyledGrid bgImage={miniBlog} />
+              </a>
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>Secret Word</StyledGridTypography>
-              <StyledGrid bgImage={secretWord} />
+              <a
+                href="https://github.com/GutoCitton/Udemy-secretword"
+                target="blank"
+              >
+                <StyledGrid bgImage={secretWord} />
+              </a>
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>Cartão de visita</StyledGridTypography>
-              <StyledGrid bgImage={cartaoVisita} />
+
+              <a
+                href="https://github.com/GutoCitton/desafio_card"
+                target="blank"
+              >
+                <StyledGrid bgImage={cartaoVisita} />
+              </a>
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>Clone Discord</StyledGridTypography>
-              <StyledGrid bgImage={discordLogo} />
+              <a
+                href="https://github.com/GutoCitton/Clone-Discord"
+                target="blank"
+              >
+                <StyledGrid bgImage={discordLogo} />
+              </a>
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>Clone Pinterest</StyledGridTypography>
-              <StyledGrid bgImage={pinterestLogo} />
+              <a
+                href="https://github.com/GutoCitton/Clone-Pinterest"
+                target="blank"
+              >
+                <StyledGrid bgImage={pinterestLogo} />
+              </a>
             </StyledBox>
             <StyledBox>
-              <StyledGridTypography>Clone Instagram</StyledGridTypography>
-              <StyledGrid bgImage={instagramLogo} />
+              <StyledGridTypography>Portifólio</StyledGridTypography>
+              <a
+                href="https://github.com/GutoCitton/portifolio"
+                target="blank"
+              >
+                <StyledGrid bgImage={portifolioImg} />
+              </a>
             </StyledBox>
           </Grid>
         </Container>
