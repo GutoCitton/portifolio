@@ -39,6 +39,11 @@ const Projects = () => {
     textAlign: "center",
     margin: "20px 30px 100px 30px",
     borderRadius: "12px",
+    "&:hover": {
+      width: "18vh",
+      height: "23vh",
+    },
+    transition: "0.1s",
     [theme.breakpoints.down("md")]: {
       // <= Mobile
       backgroundColor: "black",
@@ -47,7 +52,7 @@ const Projects = () => {
       height: "15vh",
       textAlign: "center",
       margin: "9px",
-      marginTop: '10px'
+      marginTop: "10px",
     },
   }));
 
@@ -56,7 +61,7 @@ const Projects = () => {
     color: "white",
     fontWeight: "bold",
     textAlign: "center",
-    marginBottom:'30px'
+    marginBottom: "30px",
   }));
 
   const StyledGridTypography = styled(Typography)(({ theme }) => ({
@@ -70,18 +75,18 @@ const Projects = () => {
       marginTop: "12px",
       fontSize: "15px",
       maxWidth: "90px",
-      height:'40px',
-      display: 'flex',
-      alignItems: 'end',
-      justifyContent: 'space-around'
+      height: "40px",
+      display: "flex",
+      alignItems: "end",
+      justifyContent: "space-around",
     },
   }));
 
   const StyledBox = styled(Box)(() => ({
-    display: 'flex',
-    justifyContent: 'center',
-    flexDirection: 'column',
-    alignItems: 'center'
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
   }));
 
   return (
@@ -105,11 +110,21 @@ const Projects = () => {
           >
             <StyledBox>
               <StyledGridTypography>ReactGram</StyledGridTypography>
-              <StyledGrid bgImage={reactGram} />
+              <a
+                href="https://github.com/GutoCitton/Udemy-reactgram"
+                target="blank"
+              >
+                <StyledGrid bgImage={reactGram} />
+              </a>
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>New York Times</StyledGridTypography>
-              <StyledGrid bgImage={jornalImg} />
+              <a
+                href="https://github.com/GutoCitton/new-york-vemser"
+                target="blank"
+              >
+                <StyledGrid bgImage={jornalImg} />
+              </a>
             </StyledBox>
             <StyledBox>
               <StyledGridTypography>Previsão do Tempo</StyledGridTypography>
